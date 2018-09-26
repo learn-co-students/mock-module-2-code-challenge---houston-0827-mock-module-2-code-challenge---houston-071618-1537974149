@@ -6,4 +6,8 @@ class Employee < ApplicationRecord
 	validates :title, length: { minimum: 3 }
 	validates :office, length: { minimum: 3 }
 	validates :img_url, length: { minimum: 3 }
+
+	def to_s
+		name = first_name + ' ' + last_name
+	end
 end

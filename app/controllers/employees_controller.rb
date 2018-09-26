@@ -20,7 +20,8 @@ class EmployeesController < ApplicationController
     if @employee.save
       redirect_to employee_path(@employee)
     else
-      render :new
+      flash[:error] = @employee.errors.full_messages
+      redirect_to({:protocol => 'http://'}.merge(params), :flash => flash)
     end
 
   end
@@ -28,7 +29,7 @@ class EmployeesController < ApplicationController
   def update
     @employee = Employee.find(params[:id])
     if @employee.update(employee_params)
-    redirect_to employee_path(@employee)
+      redirect_to employee_path(@employee)
     else
       render :edit
     end

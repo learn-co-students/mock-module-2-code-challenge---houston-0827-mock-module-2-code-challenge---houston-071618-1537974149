@@ -1,19 +1,20 @@
-<% if @employee.errors.any? %>
-  <div id="error_explanation">
-    <h2>
-      <%= pluralize(@employee.errors.count, "error") %>
-      prohibited this post from being saved:
-    </h2>
-
-    <ul>
-      <% @employee.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
-
 <%= form_with model: @employee do |f| %>
+
+<%= @employee.errors %>
+  <% if @employee.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@employee.errors.count, "error") %>
+        prohibited this post from being saved:
+      </h2>
+
+      <ul>
+        <% @employee.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 
   <p><%= f.label :first_name %>
     <%= f.text_field :first_name %>
@@ -30,7 +31,7 @@
     <%= f.text_field :office %></p>
 
   <p><%= f.label :img_url %>
-    <%= f.text_field :img_url %></p>
+    <%= f.url_field :img_url %></p>
 
   <p>Choose a dog: <%= f.collection_select :dog_id, Dog.all, :id, :name %></p>
 

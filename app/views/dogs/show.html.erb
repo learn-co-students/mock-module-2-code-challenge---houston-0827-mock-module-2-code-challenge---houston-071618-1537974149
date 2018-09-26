@@ -3,5 +3,6 @@
 <p>Dog breed: <%= @dog.breed %></p>
 <p>Dog age: <%= @dog.age %></p>
 <p>Employee: <% @dog.employees.each do |em| %>
-    <%= em.first_name %> <%= em.last_name %></p>
+    <%= em.to_s %> </p>
+    <%#= binding.pry %>
 <% end %>
