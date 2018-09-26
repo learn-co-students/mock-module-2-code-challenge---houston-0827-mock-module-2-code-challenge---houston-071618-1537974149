@@ -1,0 +1,11 @@
+<h3>Update Dog Form</h3>
+
+<%= form_with model: @dog do |f| %>
+    <label>Name:</label><br>
+    <%= f.text_field :name %><br>
+    <label>Breed:</label><br>
+    <%= f.text_field :breed %><br>
+    <label>Age:</label><br>
+    <%= f.text_field :age %><br>
+    <%= f.submit %>
+<% end %>
