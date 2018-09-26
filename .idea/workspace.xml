@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6461680b-72e2-44ec-ba95-9ec099b40841" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/employees/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/dogs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/dogs_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/employees_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/employees_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/dog.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/dog.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/employee.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/employee.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20180411182746_create_employees.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180411182746_create_employees.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -92,13 +82,13 @@
         <counts>
           <entry key="cell" value="37" />
           <entry key="erb" value="478" />
-          <entry key="rb" value="614" />
+          <entry key="rb" value="616" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="RHTML" value="478" />
-          <entry key="Ruby" value="614" />
+          <entry key="Ruby" value="616" />
           <entry key="Scratch" value="37" />
         </counts>
       </usages-collector>
@@ -155,8 +145,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/employees_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+            <state relative-caret-position="345">
+              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -470,19 +460,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537974279455</updated>
-      <workItem from="1537974281359" duration="4522000" />
+      <workItem from="1537974281359" duration="4640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4522000" />
+    <option name="totallyTimeSpent" value="4640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49950445" visible="true" weight="0.18526466" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49950445" visible="true" weight="0.18526466" />
       <window_info id="Structure" order="2" sideWeight="0.50049555" side_tool="true" weight="0.18051118" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.3293124" />
       <window_info anchor="bottom" id="Messages" order="1" weight="0.32908162" />
@@ -502,7 +492,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" x="629" y="382" width="1270" height="316" id="Terminal" order="5" visible="true" weight="0.32761088" />
+      <window_info active="true" anchor="right" x="629" y="382" width="1270" height="316" id="Terminal" order="5" visible="true" weight="0.32761088" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,8 +637,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/employees_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        <state relative-caret-position="345">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
         </state>
       </provider>
     </entry>

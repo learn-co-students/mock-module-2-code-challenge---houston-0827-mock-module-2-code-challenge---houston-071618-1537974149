@@ -18,7 +18,7 @@ class EmployeesController < ApplicationController
   def create
     @employee = Employee.new(employee_params)
     if @employee.save
-      redirect_to post_path(@employee)
+      redirect_to employee_path(@employee)
     else
       render :new
     end
