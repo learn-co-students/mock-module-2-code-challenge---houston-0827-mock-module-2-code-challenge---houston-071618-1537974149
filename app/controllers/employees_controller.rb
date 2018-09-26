@@ -17,12 +17,13 @@ class EmployeesController < ApplicationController
   end
 
   def edit
-    @em = Employee.find(params[:id])
+    @employee = Employee.find(params[:id])
   end
 
   def update
-    Employee.update(@em.id, employee_params)
-    redirect_to @em
+  @employee = Employee.find(params[:id])
+  @employee.update(employee_params)
+  redirect_to employee_path(@employee)
   end
 
   private 
