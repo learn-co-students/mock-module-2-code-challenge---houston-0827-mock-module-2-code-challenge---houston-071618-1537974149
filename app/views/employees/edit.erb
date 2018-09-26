@@ -1,0 +1,9 @@
+<h2>Edit an Employee</h2>
+
+<%= form_with model: Employee.new do |form| %>
+<p>Employee Name</p>
+  <%= form.text_field :name %>
+<p>Dog ID</p>
+  <%= form.text_field :dog_id %>
+  <%= form.submit %>
+<% end %>

@@ -6,7 +6,8 @@ one:
   alias: MyString
   title: MyString
   office: MyString
-  dog: one
+  dog_id: MyString
+  img_url: MyString
 
 two:
   first_name: MyString
@@ -14,4 +15,5 @@ two:
   alias: MyString
   title: MyString
   office: MyString
-  dog: two
+  dog_id: MyString
+  img_url: MyString
