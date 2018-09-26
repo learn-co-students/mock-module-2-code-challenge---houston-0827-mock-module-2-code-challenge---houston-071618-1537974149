@@ -1,0 +1,16 @@
+<h2><%= @dog.name %></h2>
+<p><%= @dog.breed %></p>
+<p><%= @dog.age %></p>
+
+<h3><%= pluralize(@dog.employee_count, 'employee') %></h3>
+<ul>
+  <% @dog.employees.each do |employee| %>
+    <li><%= link_to employee.title, employee_path(employee) %></li>
+  <% end %>
+</ul>
+
+
+<div><a href='/dogs/<%= @dog.id %>/edit'> Edit</a> <a href='/dogs'> All dog</a></div>
+<%= form_tag dog_path(@dog.id), method: "delete" do %>
+  <%= submit_tag "Delete #{@dog.name}" %>
+<% end %>

@@ -1,0 +1,30 @@
+<h1>Dogs</h1>
+
+<div><%= link_to 'Create Dog', new_dog_path %></div>
+<br />
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>breed</th>
+      <th>age</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dogs.each do |dog| %>
+      <tr>
+        <td><%= dog.name %></td>
+        <td><%= dog.breed %></td>
+        <td><%= dog.age %></td>
+        <td>
+          <%= link_to 'View', dog %> |
+          <%= link_to 'Edit', edit_dog_path(dog) %> |
+          <%= link_to 'Delete', dog, method: :delete, data: { confirm: 'For real?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
