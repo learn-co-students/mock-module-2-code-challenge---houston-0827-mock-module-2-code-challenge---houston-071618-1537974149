@@ -1,0 +1,8 @@
+On the index page for both Dogs and Employees, a user should be able to click a 
+name and the site should take them to the corresponding show page.
+
+<h1>Dog Index</h1>
+
+<% @dogs.each do |dog| %>
+    <p><%= link_to dog.name, dog_path(dog) %></p>
+    <% end %>
