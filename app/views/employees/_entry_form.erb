@@ -1,0 +1,24 @@
+<p>New Employee</p>
+
+<% if @employee.errors.any? %>
+	<p style="color:red">Error saving employee:</p>
+		<ul>
+		<% @employee.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+		<% end %>
+		</ul>
+	</p>
+<% end %>
+
+<%= form_for(@employee) do |f| %>
+	<%= f.text_field :first_name, placeholder: "First Name" %>
+	<%= f.text_field :last_name, placeholder: "Last Name" %><br/>
+	<%= f.text_field :alias, placeholder: "Alias" %><br/>
+	<%= f.text_field :title, placeholder: "Title" %><br/>
+	<%= f.text_field :office, placeholder: "Office" %><br/>
+
+	<%= f.label "Dog: " %>
+  <%= f.collection_select :dog_id, Dog.all, :id, :name %><br/>
+	<%= f.text_field :img_url, placeholder: "Image Path" %><br/>
+  <%= f.submit %>
+<% end %>
