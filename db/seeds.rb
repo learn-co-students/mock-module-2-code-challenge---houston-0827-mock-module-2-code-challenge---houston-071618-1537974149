@@ -17,3 +17,10 @@ Employee.create(first_name: "Darryl", last_name: "Philbin", alias: "none", title
 5.times do
   Dog.create(name: Faker::Dog.name, breed: Faker::Dog.breed, age: Faker::Dog.age)
 end
+
+# Dog.create(name: 'Fido', breed: 'breed_1', age: 5)
+# Dog.create(name: 'Puma', breed: 'breed_2', age: 2)
+# Dog.create(name: 'Lobo', breed: 'breed_3', age: 1)
+# Dog.create(name: 'Dollar', breed: 'breed_4', age: 3)
+# Dog.create(name: 'Choco', breed: 'breed_5', age: 7)
+
