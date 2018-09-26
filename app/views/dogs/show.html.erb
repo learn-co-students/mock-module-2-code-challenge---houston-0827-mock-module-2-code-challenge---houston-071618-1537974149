@@ -2,4 +2,6 @@
 <p>Dog name: <%= @dog.name %></p>
 <p>Dog breed: <%= @dog.breed %></p>
 <p>Dog age: <%= @dog.age %></p>
-<!--<p>Employee: <%#= @dog.employee.name %></p>-->
+<p>Employee: <% @dog.employees.each do |dog| %>
+    <%= dog.name %></p>
+<% end %>

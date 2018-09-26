@@ -1,5 +1,5 @@
 class Employee < ApplicationRecord
-	has_many :dogs
+	belongs_to :dog
 	validates :first_name, presence: true, length: { minimum: 3 }
 	validates :last_name, presence: true, length: { minimum: 3 }
 	validates :alias, length: { minimum: 3 }
