@@ -1,0 +1,10 @@
+<h3>Create Employee</h3>
+<%= form_for @employee do |f| %>
+First Name:<%= f.text_field :first_name %>
+Last Name:<%= f.text_field :last_name %>
+Alias:<%= f.text_field :alias %>
+Title:<%= f.text_field :title %>
+Office:<%= f.text_field :office %>
+Dog:<%= f.collection_select :dog_id, Dog.all, :id, :name, prompt: true %>
+<%= f.submit %>
+<% end %>
