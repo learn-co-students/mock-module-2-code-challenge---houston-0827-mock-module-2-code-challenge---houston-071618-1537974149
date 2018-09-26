@@ -1,0 +1,12 @@
+The Dog show page should have their name, breed, age, and 
+the Dunder Mifflin Employees associated with that dog.
+
+<h1>Dog Show</h1>
+
+<p>Name: <%= @dog.name %></p>
+<p>Breed: <%= @dog.breed %></p>
+<p>Age: <%= @dog.age %></p>
+<p>Employees: </p>
+<% @dog.employees.each do |employee| %>
+    <p><%= employee.first_name %> <%= employee.last_name %></p>
+    <%end%>
