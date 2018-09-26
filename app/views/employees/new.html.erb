@@ -1,0 +1,22 @@
+As a user I should be able to create and edit an Employee and be able to select 
+1 dog from a list of existing dogs.
+
+<% if flash[:errors] %>
+    <% flash[:errors].each do |error| %>
+        <p><%= error %></p>
+    <% end %>
+<% end %>
+
+<h1>Employee New</h1>
+
+<%= form_with model: @employee do |form| %>
+    <p>First Name: <%= form.text_field :first_name %></p>
+    <p>Last Name: <%= form.text_field :last_name %></p>
+    <p>Alias: <%= form.text_field :alias %></p>
+    <p>Title: <%= form.text_field :title %></p>
+    <p>Office: <%= form.text_field :office %></p>
+    <p>Image URL: <%= form.text_field :img_url %></p>
+    <p>Dog ID: <%= form.collection_select :dog_id, Dog.all, :id, :name %>
+    <%#= form.text_field :dog_id %></p>
+    <%= form.submit %>
+    <% end %>
