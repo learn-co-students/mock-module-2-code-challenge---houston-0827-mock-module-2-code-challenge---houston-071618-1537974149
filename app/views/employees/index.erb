@@ -1,0 +1,4 @@
+<h1>Employees</h1>
+<% @employees.each do |em| %>
+    <p><a href="/employees/<%= em.id %>"><%= em.first_name %> <%= em.last_name %></a></p>
+<% end %>
