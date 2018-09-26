@@ -1,7 +1,7 @@
 
 We’ve started some of the work for you but we still need your help to get our site working! Here are the deliverables:
 
-Build out the associations for the models we’ve created. You may need to change the schema in order to get the rake db:seed command to work.
+<!-- Build out the associations for the models we’ve created. You may need to change the schema in order to get the rake db:seed command to work. -->
 
 On the index page for both Dogs and Employees, a user should be able to click a name and the site should take them to the corresponding show page.
 
