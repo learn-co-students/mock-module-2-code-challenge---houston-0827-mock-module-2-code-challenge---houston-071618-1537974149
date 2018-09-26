@@ -1,0 +1,9 @@
+<h2><%= @employee.first_name %></h2>
+<p><%= @employee.last_name %></p>
+<p><%= @employee.title %></p>
+<p><%= @employee.alias %></p>
+<p><%= @employee.office %></p>
+<div><a href='/employees/<%= @employee.id %>/edit'> Edit</a> <a href='/employees'> All Employee</a></div>
+<%= form_tag employee_path(@employee.id), method: "delete" do %>
+  <%= submit_tag "Delete #{@employee.first_name}" %>
+<% end %>
