@@ -1,0 +1,8 @@
+<h1>Employees Show</h1>
+<h3> First Name: <%=@employee.first_name%> </h3>
+<h3> Last Name: <%=@employee.last_name%> </h3>
+<h3> Alias: <%=@employee.alias%> </h3>
+<h3> Title: <%=@employee.title%> </h3>
+<h3> Office: <%=@employee.office%> </h3>
+<h3> Dog: <a href='/dogs/<%=@employee.dog.id%>'> <%=@employee.dog.name%> </h3>
+<h3> Picture: <%= image_tag @employee.img_url %> </h3>
