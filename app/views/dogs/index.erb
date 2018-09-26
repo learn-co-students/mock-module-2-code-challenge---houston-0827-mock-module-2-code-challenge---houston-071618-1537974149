@@ -1,0 +1,14 @@
+<table>
+	<tr>
+		<td>Dog</td>
+		<td>Breed</td>
+		<td>Age</td>
+	</tr>
+	<% @dogs.each do |dog| %>
+		<tr>
+			<td><%= link_to dog.name, dog %></td>
+			<td><%= dog.breed %></td>
+			<td><%= dog.age %></td>
+		</tr>
+	<% end %>
+</table>

@@ -1,2 +1,18 @@
 class Employee < ApplicationRecord
+	validates :first_name, presence: true
+	validates :last_name, presence: true
+	validates :title, presence: true
+	validates :office, presence: true
+	validates :alias, uniqueness: true
+  validates :title, uniqueness: true
+	
+	belongs_to :dog
+
+	def display_name
+		if self.alias != "none"
+			"#{self.first_name} \"#{self.alias}\" #{self.last_name}"
+		else
+			"#{self.first_name} #{self.last_name}"
+		end
+	end
 end
