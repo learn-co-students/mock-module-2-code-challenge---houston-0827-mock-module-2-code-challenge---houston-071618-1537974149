@@ -1,0 +1,9 @@
+<img src="<%= @e.img_url %>" alt="<%= @e.first_name %>">
+<h1><%= @e.full_name %></h1>
+<p><strong>Title: </strong><%= @e.title %></p>
+<p><strong>Nickname: </strong><%= @e.alias%></p>
+<p><strong>Branch: </strong><%= @e.office %></p>
+<% dog = Dog.find(@e.dog_id) %>
+<p><strong>Favorite Dog: </strong><%= dog.name %></p>
+
+<h4><%= link_to "Go Back", dogs_path %></h4>
