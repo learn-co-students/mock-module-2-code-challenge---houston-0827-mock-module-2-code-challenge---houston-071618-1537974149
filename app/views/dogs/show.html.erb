@@ -1,0 +1,8 @@
+<h1>Dogs#show</h1>
+<p>Dog name: <%= @dog.name %></p>
+<p>Dog breed: <%= @dog.breed %></p>
+<p>Dog age: <%= @dog.age %></p>
+<p>Employee: <% @dog.employees.each do |em| %>
+    <%= em.to_s %> </p>
+    <%#= binding.pry %>
+<% end %>
